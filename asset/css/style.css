@@ -1,0 +1,174 @@
+body{
+    background: url('../img/topezara.jpg');
+}
+header .topo{
+    background-color: #3798d8;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-bottom: none;
+    border-radius: 7px 7px 0 0;
+}
+header .menu{
+    background-color: #37a9f3;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 0 0 7px 7px;
+}
+header .menu ul li{
+    padding: 0;
+    margin: 0;
+}
+header .topo h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+header .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+header .menu ul a{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+section .coracao img{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+section{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+section div{
+    width: 33%;
+    position: relative;
+}
+p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+section div p{
+    font-size: 28px;
+}
+section div p{
+    position:  absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+footer{
+    background-color: #fce7b6;
+    border: 2px solid #000;
+    border-radius: 7px;
+    padding: 10px;
+}
+footer p{
+    color:#000;
+}
+section .nome img{
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.envelope{
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.envelope img{
+    cursor: pointer;
+}
+.hide{
+    display: none !important;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.galeria li img{
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+.galeria li{
+    max-width: 45%;
+    padding: 10px;
+    width: 45%;
+}
+@media (max-width: 480px){
+    .secao-inicial{
+        flex-direction: column;
+
+    }
+    .secao-inicial .nome{
+        width: 100%;
+    }
+    section .coracao{
+        width: 100%;
+    }
+    .envelope img{
+        max-width: 90%;
+        height: auto;
+    }
+    .galeria li{
+        max-width: 100%;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+.overflow{
+    overflow: hidden;
+}
+.galeria ul{
+    padding: 0;
+}
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .85 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .85 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .85 );
+  }
+  100%
+  {
+    transform: scale( .85 );
+  }
+}
+.coracao-imagem{
+    animation: heartbeat 1s infinite;
+}
